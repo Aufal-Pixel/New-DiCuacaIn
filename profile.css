@@ -75,7 +75,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("image/limama.png") no-repeat center center/cover;
+  background: url("limama.png") no-repeat center center/cover;
 }
 
 /* Overlay biar form lebih jelas */
@@ -87,3 +87,4 @@ body::before {
   background: rgba(0,0,0,0.3);
   z-index: 0;
 }
+
