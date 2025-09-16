@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dicuaca | Map</title>
+  <link rel="stylesheet" href="map.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      <img src="image/Untitled design (3).png">
+    </div>
+    
+    <div class = "nav-right">
+    <nav>
+
+      <ul>
+        <li><a href="welcome.html">HOME</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="profile.html">PROFILE</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      
+      </ul>
+
+    </nav>
+    <div class="nav-extra">
+      <input type="text" id="cityInput" placeholder="Search city...">
+      <button onclick="searchCity()">Search</button>
+      <div class="menu-icon">☰</div>
+    </div>
+  </header>
+
+<p id="savedMsg" style="display:none;"></p>
+<h3 id="cityName" style="display:none;"></h3>
+<p id="weatherText" style="display:none;"></p>
+
+  <!-- Map -->
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Script -->
+  <script src="map.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background-color: #1a1d1e;
+}
+
+header .logo img {
+  height: 40px;
+  width: auto;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header .nav-extra {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* jarak antara menu dan search */
+}
+
+
+header .nav-extra input {
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+header .nav-extra button {
+  padding: 6px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+header .nav-extra button:hover {
+  background: #0056b3;
+}
+
+header .menu-icon {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Map */
+#map {
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  height: calc(100vh - 60px); 
+  margin-top: 76px;           
+}
